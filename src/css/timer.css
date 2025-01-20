@@ -1,0 +1,33 @@
+
+
+.timer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.label {
+    margin:auto;
+    font-size: 3vh;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+#datetime-picker {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.value {
+    font-size: 5vh;
+}
+    
+.container{
+    margin: auto;
+    width: 300px;
+}
