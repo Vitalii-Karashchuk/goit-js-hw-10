@@ -14,7 +14,7 @@ const btnEl = document.querySelector('button[data-start]');
 const timerFields = document.querySelectorAll('.field .value');
 
 let userSelectedDate = null;
-
+btnEl.disabled = true;
 // Ініціалізація flatpickr для вибору дати та часу
 flatpickr(inputEl, {
   enableTime: true,
@@ -29,6 +29,7 @@ flatpickr(inputEl, {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future!',
+        position: "topRight",
       });
       btnEl.disabled = true;
     } else {
@@ -80,12 +81,15 @@ function startTimer() {
     // Перевірка, чи час закінчився
     if (deltaTime <= 0) {
       clearInterval(intervalId);
+      updateClockface({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       btnEl.disabled = true;
       inputEl.disabled = false;
       iziToast.success({
         title: 'Success',
         message: 'Timer has ended!',
+        position: 'topRight',
       });
+    
     }
   }, 1000);
 }
