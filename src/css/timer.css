@@ -29,7 +29,7 @@
     border-color: #CFCFCF;
 }
 
-button {
+button[data-start] {
     width: 75px;
     height: 40px;
     padding: 8px 16px 8px 16px;

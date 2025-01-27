@@ -5,7 +5,11 @@
     margin: auto;
     width: 300px;
    
-    
+     
+}
 
-  
+button[type="submit"]{
+    background-color: #4E75FF;
+    color: #f6faf6;
+    border-radius: 4px;
 }
