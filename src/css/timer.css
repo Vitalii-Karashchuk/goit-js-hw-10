@@ -43,6 +43,16 @@ button[data-start] {
     color: #989898;
 }
 
+button[data-start].active{
+    background-color: #a8a5a5;
+    color: #353434;
+}
+
+button[data-start].inactive{
+    background-color: #CFCFCF;
+    color: #989898;
+}
+
 .value {
     font-size: 5vh;
 }

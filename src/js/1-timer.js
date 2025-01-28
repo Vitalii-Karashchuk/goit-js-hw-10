@@ -34,6 +34,7 @@ flatpickr(inputEl, {
       btnEl.disabled = true;
     } else {
       btnEl.disabled = false;
+      btnEl.classList.add('active');
     }
   },
 });
@@ -83,6 +84,7 @@ function startTimer() {
       clearInterval(intervalId);
       updateClockface({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       btnEl.disabled = true;
+      btnEl.classList.remove('active');
       inputEl.disabled = false;
       iziToast.success({
         title: 'Success',
